@@ -1,0 +1,12 @@
+# StaffUtility Configuration
+
+# Discord Webhook Settings
+discord:
+  enabled: false
+  webhook-url: "https://discord.com/api/webhooks/YOUR_WEBHOOK_URL_HERE"
+
+  # Embed settings
+  embed-color: 15158332  # Red color (decimal)
+  embed-title: "Player Report"
+  embed-footer: "StaffUtility Report System"
+

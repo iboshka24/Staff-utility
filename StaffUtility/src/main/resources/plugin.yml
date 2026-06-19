@@ -1,0 +1,87 @@
+name: StaffUtility
+version: '1.0.0'
+main: com.staffutility.StaffUtility
+api-version: '1.21'
+author: ibrohim
+description: Staff utility plugin with report system and moderation tools
+softdepend: [GrimAC, PulsarAntiCheat, PulsarCore]
+folia-supported: true
+
+commands:
+  report:
+    description: Report a player to staff
+    usage: /report <player>
+  sfmode:
+    description: Toggle staff mode
+    usage: /sfmode
+  offend:
+    description: Ban a player with specific reason
+    usage: /offend <player> <reason>
+    permission: staffutility.offend
+  nv:
+    description: Toggle night vision
+    usage: /nv
+  sus:
+    description: View list of reported players
+    usage: /sus
+    permission: staffutility.sus
+  gmsp:
+    description: Toggle spectator mode
+    usage: /gmsp
+    permission: staffutility.gmsp
+  gtp:
+    description: Teleport to a player
+    usage: /gtp <player>
+    permission: staffutility.gtp
+  damage:
+    description: Damage a player
+    usage: /damage <player> <amount>
+    permission: staffutility.damage
+  addstaff:
+    description: Add a staff member
+    usage: /addstaff <player>
+    permission: staffutility.addstaff
+  vanish:
+    description: Toggle vanish mode (hide from tab list)
+    usage: /vanish
+    permission: staffutility.vanish
+  ipban:
+    description: Temporarily IP-ban a player
+    usage: /ipban <player> <duration> [reason]
+    permission: staffutility.ipban
+  homes:
+    description: View or teleport to another player's homes
+    usage: /homes <player> [home]
+    permission: staffutility.homes
+
+permissions:
+  staffutility.staff:
+    description: Access to staff mode
+    default: false
+  staffutility.offend:
+    description: Access to offend command
+    default: false
+  staffutility.sus:
+    description: Access to sus command
+    default: false
+  staffutility.gmsp:
+    description: Access to spectator mode
+    default: false
+  staffutility.gtp:
+    description: Access to teleport command
+    default: false
+  staffutility.damage:
+    description: Access to damage command
+    default: false
+  staffutility.addstaff:
+    description: Access to add staff command
+    default: op
+  staffutility.vanish:
+    description: Access to vanish command
+    default: false
+  staffutility.ipban:
+    description: Access to temporary IP-ban command
+    default: op
+  staffutility.homes:
+    description: Access to view other players' homes
+    default: op
